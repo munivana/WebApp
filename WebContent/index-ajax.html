@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Ajax get</title>
+		<style>
+		body {
+			font-family:Tahoma;
+			font-size:16px;
+		}
+		#button {
+			background-color:#e6e6fa;
+			font-weight:bold;
+			color:#0a7079;
+			border:1px solid #0a7079;
+			padding:8px;
+			margin-bottom:8px;
+		}
+		#button:hover {
+			border:1px solid #35465c;
+			color:#35465c;
+		}
+		h1{
+			color:#35465c;
+		}
+		</style>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script>
+			$(document).on("click", "#button", function() {
+				$.get("App", function(responseText) {
+					$("div").text(responseText);
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Ajax</h1>
+		<button id="button">Call doGet</button>
+		<div></div>
+	</body>
+</html>

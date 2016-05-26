@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML form</title>
+		<style>
+		body {
+			font-family:Tahoma;
+			font-size:16px;
+		}
+		#prvy,#druhy,#treti {
+			margin:5px 0 5px 0;
+			padding:3px;
+		}
+		.submit {
+			margin-top:8px;
+			background-color:#e6e6fa;
+			font-weight:bold;
+			color:#0a7079;
+			border:1px solid #0a7079;
+			padding:8px;
+		}
+		.submit:hover {
+			border:1px solid #35465c;
+			color:#35465c;
+		}
+		h1 {
+			color:#35465c;
+		}
+		a {
+			color:#0a7079;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Formular</h1>
+		<form name="form" method="post" action="http://localhost:8080/app/App">
+			<label for="prvy">1. input</label>
+			<input name="1. input" type="text" id="prvy"><br>
+			<label for="druhy">2. input</label>
+			<input name="2. input" type="text" id="druhy"><br>
+			<label for="treti">3. input</label>
+			<input name="3. input" type="text" id="treti"><br>
+			<input type="submit" value="Odoslat" class="submit">
+		</form>
+	</body>
+</html>
